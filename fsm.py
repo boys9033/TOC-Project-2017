@@ -9,23 +9,23 @@ class TocMachine(GraphMachine):
 
     def is_going_to_state1(self, update):
         text = update.message.text
-        return text.lower() == 'baby'
+        return text.lower() == 'birth'
 
     def is_going_to_state2(self, update):
         text = update.message.text
-        return text.lower() == 'kid'
+        return text.lower() == 'grow up'
 
     def is_going_to_state3(self, update):
         text = update.message.text
-        return text.lower() == 'teenager'
+        return text.lower() == 'play with friends'
 
     def is_going_to_state4(self, update):
         text = update.message.text
-        return text.lower() == 'adult'
+        return text.lower() == 'absorb knowledge'
 
     def is_going_to_state5(self, update):
         text = update.message.text
-        return text.lower() == 'elderly'
+        return text.lower() == 'work work work'
 
     def is_going_to_state6(self, update):
         text = update.message.text
@@ -67,7 +67,7 @@ class TocMachine(GraphMachine):
         print('Leaving elderly')
 
     def on_enter_state6(self, update):
-        update.message.reply_text("I am dead.")
+        update.message.reply_text("I am dead. I need to reborn.")
         self.go_back(update)
 
     def on_exit_state6(self, update):

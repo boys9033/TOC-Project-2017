@@ -48,31 +48,31 @@ python3 app.py
 The initial state is set to `user`.
 
 * user
-	* Input: "baby"
+	* Input: "birth"
 		* Reply: "I am a baby."
 
 	* Input: "dead"
 		* Reply: "I am dead."
 * baby
-	* Input: "kid"
+	* Input: "grow up"
 		* Reply: "I am a kid."
 
 	* Input: "dead"
 		* Reply: "I am dead."
 * kid
-	* Input: "teenager"
+	* Input: "play with friends"
 		* Reply: "I am a teenager."
 
 	* Input: "dead"
 		* Reply: "I am dead."
 * teenager
-	* Input: "adult"
+	* Input: "absorb knowledge"
 		* Reply: "I am an adult."
 
 	* Input: "dead"
 		* Reply: "I am dead."
 * adult
-	* Input: "elderly"
+	* Input: "work work work"
 		* Reply: "I am an elderly."
 
 	* Input: "dead"
