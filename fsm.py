@@ -10,21 +10,21 @@ class TocMachine(GraphMachine):
 
     def is_going_to_state1(self, update):
         text = update.message.text
-        return text.lower() == 'go to state1'
+        return text.lower() == 'baby'
 
     def is_going_to_state2(self, update):
         text = update.message.text
-        return text.lower() == 'go to state2'
+        return text.lower() == 'kid'
 
     def on_enter_state1(self, update):
-        update.message.reply_text("I'm entering state1")
+        update.message.reply_text("I am a baby.")
         self.go_back(update)
 
     def on_exit_state1(self, update):
         print('Leaving state1')
 
     def on_enter_state2(self, update):
-        update.message.reply_text("I'm entering state2")
+        update.message.reply_text("I am a kid.")
         self.go_back(update)
 
     def on_exit_state2(self, update):
