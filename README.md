@@ -47,15 +47,38 @@ python3 app.py
 ## Usage
 The initial state is set to `user`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
 * user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+	* Input: "baby"
+		* Reply: "I am a baby."
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+	* Input: "dead"
+		* Reply: "I am dead."
+* baby
+	* Input: "kid"
+		* Reply: "I am a kid."
 
+	* Input: "dead"
+		* Reply: "I am dead."
+* kid
+	* Input: "teenager"
+		* Reply: "I am a teenager."
 
+	* Input: "dead"
+		* Reply: "I am dead."
+* teenager
+	* Input: "adult"
+		* Reply: "I am an adult."
+
+	* Input: "dead"
+		* Reply: "I am dead."
+* adult
+	* Input: "elderly"
+		* Reply: "I am an elderly."
+
+	* Input: "dead"
+		* Reply: "I am dead."
+* elderly
+	* Input: "dead"
+		* Reply: "I am dead."
 ## Author
-[Lee-W](https://github.com/Lee-W)
+boys9033(http://github.com/boys9033/TOC-Project-2017)
